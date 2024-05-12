@@ -11,7 +11,6 @@ class app(QMainWindow):
         self.callNavbar()
     def callNavbar(self):
         NavigationWidget(self)
-        pass
 if __name__ == "__main__":
     app_ = QApplication(sys.argv)
     widget = app()
