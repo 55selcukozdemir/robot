@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,6">
+        <item>
+         <widget class="QFrame" name="nav">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="navLayout"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="content">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_4">
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="contentLayout"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuaa">
+    <property name="title">
+     <string>ayarlar</string>
+    </property>
+    <widget class="QMenu" name="menuVerinin_Yaz_laca_Yer">
+     <property name="title">
+      <string>Verinin Yazılacağı Yer</string>
+     </property>
+     <addaction name="actionVeritaban"/>
+    </widget>
+    <addaction name="menuVerinin_Yaz_laca_Yer"/>
+   </widget>
+   <widget class="QMenu" name="menuba_lant">
+    <property name="title">
+     <string>bağlantı</string>
+    </property>
+    <addaction name="actionba_lan"/>
+   </widget>
+   <addaction name="menuaa"/>
+   <addaction name="menuba_lant"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionba_lan">
+   <property name="text">
+    <string>bağlan</string>
+   </property>
+  </action>
+  <action name="actionVeritaban">
+   <property name="text">
+    <string>Veritabanı</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
